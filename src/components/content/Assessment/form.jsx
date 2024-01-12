@@ -11,9 +11,17 @@ const FormElement = ({ onClose }) => {
   const [newSkill, setNewSkill] = useState("");
 
   const handleAddSkill = (e) => {
-    if (e.key === "Enter" && newSkill.trim() !== "") {
+    if (
+      e.key === "Enter" &&
+      newSkill.trim() !== "" &&
+      !skills.includes(newSkill.trim())
+    ) {
       setSkills([...skills, newSkill.trim()]);
       setNewSkill("");
+    }
+    if (skills.includes(newSkill.trim())) {
+      setNewSkill("");
+      alert("Skill already exist");
     }
   };
 
@@ -27,13 +35,13 @@ const FormElement = ({ onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 sm:top-0 z-50 bg-black bg-opacity-50">
-      <div className="sm:w-2/5 fixed bottom-0 sm:top-0 sm:static w-full mx-auto bg-white rounded-xl">
-        <div className="text-navy-blue sm:p-4 p-2 flex flex-row justify-between items-center border-b-2 border-grey">
-          <p className="text-xl font-medium hidden sm:block">
+    <div className="fixed inset-0 sm:top-0  z-50 bg-black bg-opacity-50">
+      <div className="sm:w-2/5 fixed bottom-0  sm:static sm:my-2   mx-auto bg-white rounded-xl">
+        <div className="text-navy-blue sm:p-4 px-2 flex flex-row justify-between items-center border-b-2 border-grey">
+          <p className="text-lg font-medium hidden sm:block">
             Create new Assessment
           </p>
-          <p className="text-base p-1 font-semibold sm:hidden">
+          <p className="text-xl  py-4 font-semibold sm:hidden">
             Sub-section details
           </p>
 
@@ -65,30 +73,30 @@ const FormElement = ({ onClose }) => {
             />
           </svg>
         </div>
-        <div className="sm:m-6 m-2.5 text-navy-blue flex flex-col sm:gap-4 gap-2">
-          <p className="text-sm sm:text-base font-medium">Name of Assessment</p>
+        <div className="sm:mx-4 sm:my-2 m-2.5 text-navy-blue flex flex-col sm:gap-2 gap-3">
+          <p className="text-lg sm:text-base font-medium">Name of Assessment</p>
           <input
             type="text"
             placeholder="Type Here"
-            className="focus:outline-none sm:p-2 px-2 py-2  border-2 rounded-lg placeholder-pl-blue placeholder-opacity-0.5 sm:placeholder-navy-blue sm:placeholder-opacity-1 sm:text-base text-xs sm:font-medium"
+            className="focus:outline-none sm:p-2 p-3  border-2 rounded-lg placeholder-pl-blue placeholder-opacity-0.5 sm:placeholder-navy-blue sm:placeholder-opacity-1 sm:text-base text-sm sm:font-medium"
           />{" "}
-          <p className=" text-sm sm:text-base font-medium">
+          <p className=" text-lg sm:text-base font-medium">
             Purpose of test is
           </p>
-          <select className="focus:outline-none sm:p-2 px-2 py-2  border-2 border-grey rounded-lg sm:text-base sm:font-medium text-xs">
+          <select className="focus:outline-none sm:p-2 px-2 py-2  border-2 border-grey rounded-lg sm:text-base sm:font-medium text-sm">
             <option className="text-navy-blue">Select</option>
           </select>
-          <p className=" text-sm sm:text-base font-medium">Description</p>
-          <select className="focus:outline-none sm:p-2 px-2 py-2 border-2 border-grey rounded-lg sm:text-base sm:font-medium text-xs">
+          <p className=" text-lg sm:text-base font-medium">Description</p>
+          <select className="focus:outline-none sm:p-2 px-2 py-2 border-2 border-grey rounded-lg sm:text-base sm:font-medium text-sm">
             <option className="text-navy-blue">Select</option>
           </select>
-          <p className="text-sm sm:text-base font-medium">Skills</p>
+          <p className="text-lg sm:text-base font-medium">Skills</p>
           <div className="text-navy-blue">
             <div className="flex flex-wrap gap-1 sm:gap-2 border-grey border-2 p-4 rounded-t-lg">
               {skills.map((item, index) => (
                 <div
                   key={index}
-                  className="text-xs flex gap-1 items-center sm:font-bold font-semibold p-2 px-4 sm:mx-2 bg-light-blue rounded-full">
+                  className="text-sm flex gap-1 items-center sm:font-bold font-semibold p-2 px-2 sm:mx-2 bg-light-blue rounded-full">
                   <p>{item}</p>
                   <svg
                     width="16"
@@ -119,11 +127,11 @@ const FormElement = ({ onClose }) => {
                 value={newSkill}
                 onChange={(e) => setNewSkill(e.target.value)}
                 onKeyDown={handleAddSkill}
-                className="sm:px-4 sm:py-2 px-2 py-2 border-b-2 border-l-2 border-r-2 w-full rounded-b-lg  placeholder-pl-blue placeholder-opacity-0.5 sm:placeholder-navy-blue sm:placeholder-opacity-1 sm:text-base text-xs sm:font-medium focus:outline-none"
+                className="sm:px-4 sm:py-2 px-2 py-2 border-b-2 border-l-2 border-r-2 w-full rounded-b-lg  placeholder-pl-blue placeholder-opacity-0.5 sm:placeholder-navy-blue sm:placeholder-opacity-1 sm:text-base text-sm sm:font-medium focus:outline-none"
               />
             </div>
           </div>
-          <div className="w-full hidden sm:block  ">
+          <div className="w-full hidden lg:block  ">
             <p className="text-l font-medium">Duration of Assessment</p>
             <input
               type="text"
@@ -132,11 +140,11 @@ const FormElement = ({ onClose }) => {
             />
           </div>
         </div>
-        <div className="border-t border-grey w-full p-2 sm:mt-8 flex justify-center">
+        <div className="border-t border-grey w-full p-2 sm: flex justify-center">
           <button className="hidden sm:block rounded-lg bg-button-blue my-2.5 text-white w-530 h-40">
             Save
           </button>
-          <button className="sm:hidden text-base block rounded-lg bg-button-blue my-1 sm:my-2.5 text-white w-full h-40">
+          <button className="sm:hidden text-xl block rounded-lg bg-button-blue my-1 sm:my-2.5 text-white w-full h-40">
             Next
           </button>
         </div>

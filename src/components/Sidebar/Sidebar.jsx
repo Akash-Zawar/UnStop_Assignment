@@ -1,7 +1,7 @@
 const Sidebar = ({ sideBarFlag }) => {
   return (
     <div className={`${!sideBarFlag ? "hidden" : "absolute"} sm:block`}>
-      <div className="h-screen sm:w-36 bg-white sm:py-6 text-navy-blue">
+      <div className="min-h-screen sm:w-36 bg-white sm:py-6 text-navy-blue">
         <div className="flex flex-col sm:gap-6 items-center">
           <div className="flex flex-col items-center gap-2">
             <svg

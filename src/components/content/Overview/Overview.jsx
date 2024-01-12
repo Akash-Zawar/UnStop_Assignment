@@ -4,8 +4,8 @@ const Overview = () => {
       <div className="m-6 text-navy-blue ">
         <p className="text-xl font-medium">Assessments Overview</p>
       </div>
-      <div className="flex flex-row flex-wrap   mx-6 mr-10  border border-grey rounded-xl">
-        <div className="flex flex-col gap-4 border-r-2 border-grey pr-12 pl-6 py-5 ">
+      <div className="flex flex-row flex-wrap ml-6 mr-10 ">
+        <div className="flex flex-col gap-4 border-2  border-grey rounded-s-lg pr-12 pl-6 py-5 ">
           <div className="text-base font-bold text-navy-blue">
             <p>Total Assessment</p>
           </div>
@@ -39,7 +39,7 @@ const Overview = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-3 border-r-2 border-grey pl-6 pr-14  py-5 ">
+        <div className="flex flex-col gap-3 border-2  border-grey pl-6 pr-14  py-5 ">
           <div className="text-base font-bold text-navy-blue">
             <p>Candidates</p>
           </div>
@@ -76,7 +76,7 @@ const Overview = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-3 border-r-2 border-grey pl-6 pr-14 py-5 ">
+        <div className="flex flex-col gap-3 border-2 border-grey pl-6 pr-14 py-5 ">
           <div className="text-base font-bold text-navy-blue">
             <p>Candidates Source</p>
           </div>
@@ -121,7 +121,7 @@ const Overview = () => {
           </div>
         </div>
         <div className="  ">
-          <div className="flex flex-col gap-4 pl-6  py-5 ">
+          <div className="flex flex-col gap-4 pr-16 pl-6 py-5 border-2 rounded-e-lg border-grey  py-5 ">
             <div className="text-base font-bold text-navy-blue">
               <p>Total Purpose</p>
             </div>

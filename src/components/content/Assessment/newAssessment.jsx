@@ -1,6 +1,6 @@
 const NewAssessment = () => {
   return (
-    <div className="border border-grey p-4 sm:py-6 w-11/12 m-auto  sm:w-392 border-dashed rounded-xl bg-light-grey">
+    <div className="border border-grey p-4 sm:py-6 w-11/12 m-auto sm:m-0  sm:w-392 border-dashed rounded-xl bg-light-grey">
       <div className="flex flex-col items-center sm:gap-4 ">
         <div>
           <svg

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AssessmentRecord from "./AssesmentRecord2";
+
 import NewAssessment from "./newAssessment";
 import FormElement from "./form";
 import AssessmentRecord2 from "./AssesmentRecord2";
@@ -115,14 +115,16 @@ const Assessment = ({ mobileFlag, onIconCLick }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col  sm:flex-row gap-4 sm:justify-between sm:gap-10 sm:mx-6">
-        <div onClick={onDivCLick} className="sm:block m-auto ">
+      <div className="flex flex-col sm:ml-6 sm:pb-4 sm:flex-row gap-4 sm:flex-wrap w-full sm:gap-10">
+        <div
+          onClick={onDivCLick}
+          className="sm:block m-auto w-full sm:w-auto sm:m-0  ">
           <NewAssessment />
         </div>
-        <div className="sm:block m-auto sm:m-0 w-full sm:w-auto ">
+        <div className="sm:block m-auto sm:m-0 w-full sm:w-auto  ">
           <AssessmentRecord1 />
         </div>
-        <div className="sm:block m-auto sm:m-0 w-full ">
+        <div className="sm:block m-auto sm:m-0 w-full sm:w-auto ">
           <AssessmentRecord2 />
         </div>
         <div className="sm:hidden m-auto sm:m-0 w-full">

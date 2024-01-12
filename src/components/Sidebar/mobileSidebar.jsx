@@ -1,7 +1,7 @@
 const MobileSidebar = ({ onFlagClick }) => {
   return (
-    <div className="fixed inset-0 z-50 flex items-center bg-black bg-opacity-50">
-      <div className=" bg-light-grey text-navy-blue m-0 h-screen w-4/5">
+    <div className=" fixed inset-0 z-50 flex items-center bg-black bg-opacity-50">
+      <div className="py-4 bg-light-grey text-navy-blue m-0 h-screen w-4/5">
         <div className="flex flex-row p-4 justify-between">
           <p className="text-base font-semibold">Menu</p>
           <svg
