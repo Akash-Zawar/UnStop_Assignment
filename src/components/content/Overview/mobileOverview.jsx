@@ -1,7 +1,7 @@
 const MobileOveriew = () => {
   return (
-    <div className="w-full px-4 py-2">
-      <div className="border-grey border-2 flex flex-row gap-4 rounded-t-xl  mt-2">
+    <div className="w-11/12 mx-auto">
+      <div className="border-grey border-2 flex flex-row gap-4 rounded-t-xl  mt-2 ">
         <div className=" flex flex-col gap-2 justify-center pl-4 pr-8 py-2 border-r-2">
           <div className="text-sm font-medium text-navy-blue  ">
             <p>Total Assessment</p>

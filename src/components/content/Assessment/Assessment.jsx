@@ -18,7 +18,7 @@ const Assessment = ({ mobileFlag, onIconCLick }) => {
         <div className="sm:m-6 my-4 mx-6 text-navy-blue ">
           <p className="text-xl font-medium">My Assessment</p>
         </div>
-        <div className="sm:hidden flex flex-row pr-2">
+        <div className="sm:hidden flex flex-row px-3 ">
           <svg
             width="40"
             height="40"
