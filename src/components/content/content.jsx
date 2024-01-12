@@ -17,7 +17,7 @@ const Content = ({ onSideClick }) => {
           <Overview />
         </div>
         {mobileFlag && (
-          <div className="sm:hidden block">
+          <div className="sm:hidden block my-4">
             <MobileOveriew />
           </div>
         )}
