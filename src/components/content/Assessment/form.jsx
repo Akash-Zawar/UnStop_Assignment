@@ -37,8 +37,8 @@ const FormElement = ({ onClose }) => {
   return (
     <div className="fixed inset-0 sm:top-0  z-50 bg-black bg-opacity-50">
       <div className="sm:w-2/5 fixed bottom-0  sm:static sm:my-2   mx-auto bg-white rounded-xl">
-        <div className="text-navy-blue sm:p-4 px-2 flex flex-row justify-between items-center border-b-2 border-grey">
-          <p className="text-lg font-medium hidden sm:block">
+        <div className="text-navy-blue sm:px-4 sm:py-6 px-2 flex flex-row justify-between items-center border-b-2 border-grey">
+          <p className="text-xl font-medium hidden sm:block">
             Create new Assessment
           </p>
           <p className="text-xl  py-4 font-semibold sm:hidden">
@@ -73,7 +73,7 @@ const FormElement = ({ onClose }) => {
             />
           </svg>
         </div>
-        <div className="sm:mx-4 sm:my-2 m-2.5 text-navy-blue flex flex-col sm:gap-2 gap-3">
+        <div className="sm:mx-4 sm:my-2 m-2.5 text-navy-blue flex flex-col sm:gap-3 gap-3">
           <p className="text-lg sm:text-base font-medium">Name of Assessment</p>
           <input
             type="text"
