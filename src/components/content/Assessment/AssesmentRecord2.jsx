@@ -1,6 +1,6 @@
 const AssessmentRecord2 = () => {
   return (
-    <div className="flex flex-col w-11/12 m-auto sm:m-0 sm:w-392 border border-grey pt-4 pb-2.5 px-4 rounded-xl">
+    <div className="flex flex-col w-11/12 m-auto sm:m-0  border border-grey pt-4 pb-2.5 px-4 rounded-xl">
       <div className="flex flex-col gap-2.5">
         <div className="flex flex-row justify-between ">
           <div className="flex flex-row gap-2">

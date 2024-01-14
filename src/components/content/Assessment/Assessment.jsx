@@ -4,9 +4,41 @@ import NewAssessment from "./newAssessment";
 import FormElement from "./form";
 import AssessmentRecord2 from "./AssesmentRecord2";
 import AssessmentRecord1 from "./AssesmentRecord1";
+import { data } from "autoprefixer";
 
 const Assessment = ({ mobileFlag, onIconCLick }) => {
   const [flag, setFlag] = useState(false);
+
+  const dataList = [
+    {
+      nameOfAssessment: "Math Assessment",
+      date: "20 Apr 2023",
+      duration: "00",
+      noOfQuestions: "00",
+      share: 0,
+    },
+    {
+      nameOfAssessment: "Math Assessment",
+      date: "20 Apr 2023",
+      duration: "00",
+      noOfQuestions: "00",
+      share: 1,
+    },
+    {
+      nameOfAssessment: "Math Assessment",
+      date: "20 Apr 2023",
+      duration: "00",
+      noOfQuestions: "00",
+      share: 1,
+    },
+    {
+      nameOfAssessment: "Math Assessment",
+      date: "20 Apr 2023",
+      duration: "00",
+      noOfQuestions: "00",
+      share: 1,
+    },
+  ];
 
   const onDivCLick = () => {
     setFlag(!flag);
@@ -115,33 +147,24 @@ const Assessment = ({ mobileFlag, onIconCLick }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:ml-6 sm:pb-4 sm:flex-row gap-4 sm:flex-wrap w-full sm:gap-10">
+      <div className="flex flex-col gap-4 w-full sm:pl-6 sm:pb-4 sm:gap-4 sm:justify-between sm:grid  md:grid-cols-1  xl:grid-cols-3 ">
         <div
           onClick={onDivCLick}
-          className="sm:block m-auto w-full sm:w-auto sm:m-0  ">
+          className="sm:block m-auto w-full  sm:w-auto sm:m-0  ">
           <NewAssessment />
         </div>
-        <div className="sm:block m-auto sm:m-0 w-full sm:w-auto  ">
-          <AssessmentRecord1 />
-        </div>
-        <div className="sm:block m-auto sm:m-0 w-full sm:w-auto ">
-          <AssessmentRecord2 />
-        </div>
-        <div className="sm:hidden m-auto sm:m-0 w-full">
-          <AssessmentRecord2 />
-        </div>
-        <div className="sm:hidden m-auto sm:m-0 w-full">
-          <AssessmentRecord2 />
-        </div>
-        <div className="sm:hidden m-auto sm:m-0 w-full">
-          <AssessmentRecord2 />
-        </div>
-        <div className="sm:hidden m-auto sm:m-0 w-full">
-          <AssessmentRecord2 />
-        </div>
-        <div className="sm:hidden m-auto sm:m-0 w-full">
-          <AssessmentRecord2 />
-        </div>
+
+        {dataList.map((data, index) => (
+          <div key={index} className="sm:block m-auto sm:m-0 w-full sm:w-auto">
+            <AssessmentRecord1
+              nameOfAssessment={data.nameOfAssessment}
+              date={data.date}
+              duration={data.duration}
+              noOfQuestions={data.noOfQuestions}
+              share={data.share}
+            />
+          </div>
+        ))}
       </div>
       <div className="">
         {flag && (

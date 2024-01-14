@@ -36,7 +36,7 @@ const FormElement = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 sm:top-0  z-50 bg-black bg-opacity-50">
-      <div className="sm:w-2/5 fixed bottom-0  sm:static sm:my-2   mx-auto bg-white rounded-xl">
+      <div className="sm:w-2/5 fixed bottom-0  sm:static sm:my-2   mx-auto bg-white rounded-xl h-7/12">
         <div className="text-navy-blue sm:px-4 sm:py-6 px-2 flex flex-row justify-between items-center border-b-2 border-grey">
           <p className="text-xl font-medium hidden sm:block">
             Create new Assessment
