@@ -6,7 +6,7 @@ const AssessmentRecord1 = ({
   share,
 }) => {
   return (
-    <div className="flex flex-col w-11/12 m-auto sm:m-0  sm:max-w-md border border-grey p-4 rounded-xl">
+    <div className="flex flex-col w-11/12 m-auto sm:m-0   border border-grey p-4 rounded-xl">
       <div className="flex flex-col gap-2.5">
         <div className="flex flex-row justify-between ">
           <div className="flex flex-row gap-2">
