@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const FormElement = ({ onClose }) => {
   const [skills, setSkills] = useState([
@@ -36,7 +36,7 @@ const FormElement = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 sm:top-0  z-50 bg-black bg-opacity-50">
-      <div className="sm:w-2/5 fixed bottom-0  sm:static sm:my-2   mx-auto bg-white rounded-xl h-7/12">
+      <div className="sm:w-2/5 fixed bottom-0  sm:static sm:my-2   mx-auto bg-white rounded-xl">
         <div className="text-navy-blue sm:px-4 sm:py-6 px-2 flex flex-row justify-between items-center border-b-2 border-grey">
           <p className="text-xl font-medium hidden sm:block">
             Create new Assessment
@@ -96,7 +96,7 @@ const FormElement = ({ onClose }) => {
               {skills.map((item, index) => (
                 <div
                   key={index}
-                  className="text-sm flex gap-1 items-center sm:font-bold font-semibold p-2 px-2 sm:mx-2 bg-light-blue rounded-full">
+                  className="text-xs flex gap-1 items-center sm:font-medium font-semibold p-2 px-2 sm:mx-2 bg-light-blue rounded-full">
                   <p>{item}</p>
                   <svg
                     width="16"
@@ -136,7 +136,7 @@ const FormElement = ({ onClose }) => {
             <input
               type="text"
               placeholder="HH:MM:SS"
-              className="p-2 border-2 w-full rounded-lg placeholder-navy-blue placeholder-opacity-1 text-l font-medium"
+              className="p-2.5 border-2 w-full rounded-lg placeholder-navy-blue placeholder-opacity-50 text-sm font-medium"
             />
           </div>
         </div>
@@ -144,7 +144,7 @@ const FormElement = ({ onClose }) => {
           <button className="hidden sm:block rounded-lg bg-button-blue my-2.5 text-white w-530 h-40">
             Save
           </button>
-          <button className="sm:hidden text-xl block rounded-lg bg-button-blue my-1 sm:my-2.5 text-white w-full h-40">
+          <button className="sm:hidden text-lg block rounded-lg bg-button-blue my-1 sm:my-2.5 text-white w-full h-40">
             Next
           </button>
         </div>

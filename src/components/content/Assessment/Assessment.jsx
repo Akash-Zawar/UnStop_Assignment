@@ -48,7 +48,7 @@ const Assessment = ({ mobileFlag, onIconCLick }) => {
     <>
       <div className=" flex flex-row justify-between items-center">
         <div className="sm:m-6 my-4 mx-6 text-navy-blue ">
-          <p className="text-xl font-medium">My Assessment</p>
+          <p className="text-lg font-semibold">My Assessment</p>
         </div>
         <div className="sm:hidden flex flex-row px-3 ">
           <svg
@@ -99,7 +99,7 @@ const Assessment = ({ mobileFlag, onIconCLick }) => {
               </clipPath>
             </defs>
           </svg>
-          <div>
+          <div className="cursor-pointer">
             {mobileFlag ? (
               <svg
                 width="40"
@@ -147,10 +147,10 @@ const Assessment = ({ mobileFlag, onIconCLick }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-4 w-full sm:pl-6 sm:pb-4 sm:gap-4 sm:justify-between sm:grid  md:grid-cols-1  xl:grid-cols-3 ">
+      <div className="flex flex-col gap-4 w-full sm:pl-6 sm:pb-4 sm:gap-0 sm:gap-y-6 sm:grid min-[945px]:grid-cols-2  sm:grid-cols-1  xl:grid-cols-3 ">
         <div
           onClick={onDivCLick}
-          className="sm:block m-auto w-full  sm:w-auto sm:m-0  ">
+          className="sm:block m-auto w-full  sm:w-auto sm:m-0 hover:cursor-pointer ">
           <NewAssessment />
         </div>
 

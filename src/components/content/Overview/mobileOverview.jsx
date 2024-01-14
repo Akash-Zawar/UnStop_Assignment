@@ -1,6 +1,6 @@
 const MobileOveriew = () => {
   return (
-    <div className="w-11/12 mx-auto">
+    <div className="w-11/12 mx-auto ">
       <div className="border-grey border-2 flex flex-row gap-4 rounded-t-xl  mt-2 ">
         <div className=" flex flex-col gap-2 justify-center pl-4 pr-8 py-2 border-r-2">
           <div className="text-sm font-medium text-navy-blue  ">
@@ -15,7 +15,7 @@ const MobileOveriew = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="40" height="40" rx="8" fill="#EBE8FD" />
-                <g clip-path="url(#clip0_0_482)">
+                <g clipPath="url(#clip0_0_482)">
                   <path
                     d="M25.8333 14.1667V17.5H13.3333V14.1667H25.8333ZM25.8333 22.5V25.8333H13.3333V22.5H25.8333ZM26.6667 12.5H12.5C12.0417 12.5 11.6667 12.875 11.6667 13.3333V18.3333C11.6667 18.7917 12.0417 19.1667 12.5 19.1667H26.6667C27.125 19.1667 27.5 18.7917 27.5 18.3333V13.3333C27.5 12.875 27.125 12.5 26.6667 12.5ZM26.6667 20.8333H12.5C12.0417 20.8333 11.6667 21.2083 11.6667 21.6667V26.6667C11.6667 27.125 12.0417 27.5 12.5 27.5H26.6667C27.125 27.5 27.5 27.125 27.5 26.6667V21.6667C27.5 21.2083 27.125 20.8333 26.6667 20.8333Z"
                     fill="#6548EE"

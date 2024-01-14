@@ -11,7 +11,7 @@ const Content = ({ onSideClick }) => {
   };
   return (
     <>
-      <div className="sm:px-2 bg-white sm:min-h-screen h-999 sm:mx-6">
+      <div className="sm:px-2 bg-white sm:min-h-screen h-999 sm:mr-2.5">
         <Header onSideClick={onSideClick} />
         <div className="sm:block hidden">
           <Overview />

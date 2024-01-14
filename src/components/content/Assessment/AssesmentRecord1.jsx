@@ -78,14 +78,14 @@ const AssessmentRecord1 = ({
         </div>
         <div>
           <div className="sm:block hidden">
-            <div className=" text-navy-blue py-1">
+            <div className=" text-navy-blue ">
               <p className="text-xs sm:text-lg font-medium">
                 {nameOfAssessment}
               </p>
             </div>
-            <div className="flex flex-row gap-3 py-1">
+            <div className="flex flex-row gap-3 ">
               <div className=" text-navy-blue border-r-2 pr-4 border-grey">
-                <p className="text-l font-medium">Job</p>
+                <p className="text-sm  font-medium">Job</p>
               </div>
               <div className="flex flex-row items-center gap-2 ">
                 <svg
@@ -105,7 +105,9 @@ const AssessmentRecord1 = ({
                     fill="#1C4980"
                   />
                 </svg>
-                <p className="text-navy-blue">{date}</p>
+                <p className="text-navy-blue text-xs font-medium text-date-grey">
+                  {date}
+                </p>
               </div>
             </div>
           </div>
@@ -113,14 +115,14 @@ const AssessmentRecord1 = ({
           <div>
             <div className="border-t-2 border-dashed mt-2 pt-2 ">
               <div className="flex flex-row flex-wrap justify-between">
-                <div className="flex flex-row gap-1 justify-between text-navy-blue sm:text-sm text-xs font-semibold">
+                <div className="flex flex-row gap-2.5 justify-between text-navy-blue   font-semibold">
                   <div className="flex flex-col ">
-                    <p>{duration}</p>
-                    <p>Duration</p>
+                    <p className="text-sm">{duration}</p>
+                    <p className="text-xs">Duration</p>
                   </div>
                   <div>
-                    <p>{noOfQuestions}</p>
-                    <p>Questions</p>
+                    <p className="text-sm">{noOfQuestions}</p>
+                    <p className="text-xs">Questions</p>
                   </div>
                 </div>
                 <div className="flex flex-row justify-center items-center gap-2">

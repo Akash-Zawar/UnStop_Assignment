@@ -10,6 +10,8 @@ export default {
         "button-blue": "#0073E6",
         green: "#05C165",
         "pl-blue": "#8DA4BF",
+        "text-blue": "#0073E6",
+        "date-grey": "#8DA4BF",
       },
       inset: {
         92: "360px",

@@ -1,15 +1,15 @@
 const Overview = () => {
   return (
-    <>
+    <div className="">
       <div className="m-6 text-navy-blue ">
-        <p className="text-xl font-medium">Assessments Overview</p>
+        <p className="text-lg font-semibold">Assessments Overview</p>
       </div>
       <div className="flex flex-row flex-wrap ml-6 mr-8">
         <div className="flex flex-col gap-4 border-2  border-grey rounded-s-lg p-4 grow">
-          <div className="text-base font-bold text-navy-blue">
+          <div className="text-sm font-semibold text-navy-blue">
             <p>Total Assessment</p>
           </div>
-          <div className="flex gap-6 items-start">
+          <div className="flex gap-2.5 items-center">
             <svg
               width="40"
               height="40"
@@ -17,7 +17,7 @@ const Overview = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <rect width="40" height="40" rx="8" fill="#EBE8FD" />
-              <g clip-path="url(#clip0_0_482)">
+              <g clipPath="url(#clip0_0_482)">
                 <path
                   d="M25.8333 14.1667V17.5H13.3333V14.1667H25.8333ZM25.8333 22.5V25.8333H13.3333V22.5H25.8333ZM26.6667 12.5H12.5C12.0417 12.5 11.6667 12.875 11.6667 13.3333V18.3333C11.6667 18.7917 12.0417 19.1667 12.5 19.1667H26.6667C27.125 19.1667 27.5 18.7917 27.5 18.3333V13.3333C27.5 12.875 27.125 12.5 26.6667 12.5ZM26.6667 20.8333H12.5C12.0417 20.8333 11.6667 21.2083 11.6667 21.6667V26.6667C11.6667 27.125 12.0417 27.5 12.5 27.5H26.6667C27.125 27.5 27.5 27.125 27.5 26.6667V21.6667C27.5 21.2083 27.125 20.8333 26.6667 20.8333Z"
                   fill="#6548EE"
@@ -40,7 +40,7 @@ const Overview = () => {
           </div>
         </div>
         <div className="flex flex-col gap-3 border-2  border-grey p-4 grow">
-          <div className="text-base font-bold text-navy-blue">
+          <div className="text-sm font-semibold text-navy-blue">
             <p>Candidates</p>
           </div>
           <div className="flex items-center gap-6">
@@ -61,14 +61,14 @@ const Overview = () => {
             </svg>
 
             <div className="text-navy-blue border-r-2 border-grey pr-4 ">
-              <p className="text-xl font-bold flex items-center gap-3">
+              <p className="text-xl font-bold flex items-center gap-1">
                 11,145
                 <span className="text-green text-xs font-semibold">+89</span>
               </p>
               <p className="text-xs font-medium">Total Candidates</p>
             </div>
             <div className="text-navy-blue ">
-              <p className="text-xl font-bold flex items-center gap-3">
+              <p className="text-xl font-bold flex items-center gap-1">
                 1,14
                 <span className="text-green text-xs font-semibold">+89</span>
               </p>
@@ -77,7 +77,7 @@ const Overview = () => {
           </div>
         </div>
         <div className="flex flex-col gap-3 border-2 border-grey p-4 grow">
-          <div className="text-base font-bold text-navy-blue">
+          <div className="text-sm font-semibold text-navy-blue">
             <p>Candidates Source</p>
           </div>
           <div className="flex items-center gap-6">
@@ -98,21 +98,21 @@ const Overview = () => {
             </svg>
 
             <div className="text-navy-blue border-r-2 border-grey pr-4 ">
-              <p className="text-xl font-bold flex items-center gap-3">
+              <p className="text-xl font-bold flex items-center gap-1">
                 11,000
                 <span className="text-green text-xs font-semibold">+89</span>
               </p>
               <p className="text-xs font-medium">E-mail</p>
             </div>
             <div className="text-navy-blue border-r-2 border-grey pr-4 ">
-              <p className="text-xl font-bold flex items-center gap-3">
+              <p className="text-xl font-bold flex items-center gap-1">
                 145
                 <span className="text-green text-xs font-semibold">+89</span>
               </p>
               <p className="text-xs font-medium">Social Share</p>
             </div>
             <div className="text-navy-blue ">
-              <p className="text-xl font-bold flex items-center pr-4 gap-3">
+              <p className="text-xl font-bold flex items-center pr-4 gap-1">
                 145
                 <span className="text-green text-xs font-semibold">+89</span>
               </p>
@@ -122,10 +122,10 @@ const Overview = () => {
         </div>
 
         <div className="flex flex-col gap-4  border-2 rounded-e-lg border-grey p-4 grow">
-          <div className="text-base font-bold text-navy-blue">
+          <div className="text-sm font-semibold text-navy-blue">
             <p>Total Purpose</p>
           </div>
-          <div className="flex items-start gap-6">
+          <div className="flex items-center gap-2.5">
             <svg
               width="40"
               height="40"
@@ -142,12 +142,12 @@ const Overview = () => {
               </g>
             </svg>
             <div className="text-navy-blue text-xl font-bold">
-              <p>34</p>
+              <p>11</p>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
