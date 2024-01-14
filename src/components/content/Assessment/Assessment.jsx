@@ -2,9 +2,8 @@ import { useState } from "react";
 
 import NewAssessment from "./newAssessment";
 import FormElement from "./form";
-import AssessmentRecord2 from "./AssesmentRecord2";
+
 import AssessmentRecord1 from "./AssesmentRecord1";
-import { data } from "autoprefixer";
 
 const Assessment = ({ mobileFlag, onIconCLick }) => {
   const [flag, setFlag] = useState(false);
